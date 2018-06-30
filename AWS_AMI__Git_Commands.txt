@@ -1,0 +1,18 @@
+ssh carnd@X.X.X.X
+
+git clone https://github.com/ahmedbelalnour/CarND-Alexnet-Feature-Extraction.git
+
+cd CarND-Alexnet-Feature-Extraction
+
+wget https://d17h27t6h515a5.cloudfront.net/topher/2016/October/580a829f_train/train.p
+
+wget https://d17h27t6h515a5.cloudfront.net/topher/2016/October/580d880c_bvlc-alexnet/bvlc-alexnet.npy
+
+source activate carnd-term1
+
+python train_feature_extraction.py
+
+
+Show system info
+sudo apt-get install lshw
+sudo lshw -html > mySpecs.html
